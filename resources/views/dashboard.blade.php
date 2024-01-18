@@ -10,7 +10,7 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 bg-white border-b border-gray-200">
                     @foreach ($posts as $post)
-                        <a href="socialmedia.com/user/{{ $post->user->id }}">{{ $post->user->name }}</a>
+                        <a href="/user/{{ $post->user->id }}">{{ $post->user->name }}</a>
                         <div class="max-w-sm rounded overflow-hidden shadow-lg">
                             <div class="px-6 py-4">
                               <p class="text-gray-700 text-base">

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,6 +20,8 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', [PostController::class, 'view'])->middleware(['auth'])->name('dashboard');
+
+Route::get('/user/{id}', [UserController::class, 'view']);
 
 Route::prefix('post')->group(function() {
 
